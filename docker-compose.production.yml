@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: domingo2000/iic2173-example-app:latest
+    build:
+      context: . # Use the current directory as the build context
+      dockerfile: Dockerfile # Use the Dockerfile in the current directory
+    ports:
+      - "3000:3000" # Map port 3000 on the host to port 3000 in the container
+
