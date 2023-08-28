@@ -1,7 +1,7 @@
 name: Node.js CI with Docker
 
 on:
-  push:
+  pull_request:
     branches:
       - main  # Adjust this to match your main branch name
 
