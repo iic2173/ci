@@ -1,4 +1,4 @@
-name: Node.js CI with Docker
+name: Test and Lint Workflow
 
 on:
   pull_request:
@@ -26,3 +26,9 @@ jobs:
 
     - name: Lint with npm
       run: npm run lint
+
+    - name: Dummy Action
+      run: echo "Hello, world!"
+
+    - name: Run automation script
+      run: ./scripts/automation.sh
