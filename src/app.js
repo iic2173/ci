@@ -6,7 +6,7 @@ const app = express();
 
 // Define the GET / route
 app.get("/", (req, res) => {
-  res.send("Hello, World!!!!Q"); // Send a response to the client
+  res.send("Hello, World!!!"); // Send a response to the client
 });
 
 module.exports = app;
